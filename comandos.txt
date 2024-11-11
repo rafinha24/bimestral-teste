@@ -8,6 +8,7 @@
 ./vendor/bin/sail artisan make:controller AuthController
 ./vendor/bin/sail artisan make:migration create_projects_table
 ./vendor/bin/sail artisan make:migration create_tasks_table
+./vendor/bin/sail artisan storage:link
 
 
 
