@@ -1,14 +1,14 @@
-./vendor/bin/sail artisan make:model Project -m
-./vendor/bin/sail artisan make:model Task -m
+./vendor/bin/sail php artisan make:model Project -m
+./vendor/bin/sail php artisan make:model Task -m
 ./vendor/bin/sail composer require laravel/sanctum
-./vendor/bin/sail artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
-./vendor/bin/sail artisan migrate
-./vendor/bin/sail artisan make:controller ProjectController --api
-./vendor/bin/sail artisan make:controller TaskController --api
-./vendor/bin/sail artisan make:controller AuthController
-./vendor/bin/sail artisan make:migration create_projects_table
-./vendor/bin/sail artisan make:migration create_tasks_table
-./vendor/bin/sail artisan storage:link
+./vendor/bin/sail php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
+./vendor/bin/sail php artisan migrate
+./vendor/bin/sail php artisan make:controller ProjectController --api
+./vendor/bin/sail php artisan make:controller TaskController --api
+./vendor/bin/sail php artisan make:controller AuthController
+./vendor/bin/sail php artisan make:migration create_projects_table
+./vendor/bin/sail php artisan make:migration create_tasks_table
+./vendor/bin/sail php artisan storage:link
 
 
 
