@@ -5,6 +5,7 @@
 ./vendor/bin/sail artisan migrate
 ./vendor/bin/sail artisan make:controller ProjectController --api
 ./vendor/bin/sail artisan make:controller TaskController --api
+./vendor/bin/sail artisan make:controller AuthController --api
 ./vendor/bin/sail artisan make:migration create_projects_table
 ./vendor/bin/sail artisan make:migration create_tasks_table
 
